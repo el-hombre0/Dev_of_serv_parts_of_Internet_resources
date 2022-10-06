@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  web-server-apache:
+    build:
+      context: ./WebService/apache
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - './WebService/apache:/var/www/html/'
+    ports:
+      - "8080:80"
+
+  web-server-nginx:
+    container_name: web-server-nginx
+    build:
+      context: ./WebService/nginx
+      dockerfile: Dockerfile
+    restart: always
+    links:
+      - mysql-db
+    volumes:
+      - ./WebService/nginx/html:/usr/share/nginx/html-static
+      - ./WebService/nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "8081:81"
+      
+  mysql-db:
+    build: 
+      context: ./WebService/database
+      dockerfile: Dockerfile
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: portfolioDB
+    restart: always      
+
+volumes:
+  mysql-data:

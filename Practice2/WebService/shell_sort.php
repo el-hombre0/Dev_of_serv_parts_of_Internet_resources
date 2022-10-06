@@ -35,7 +35,7 @@
         return $numbers;
     }
     $numbers = array_fill_rand(50, 0, 100);
-    // // $numbers = [21, 25, 100, 1, 3, 2, 34, 853, 298, 4, 98, 89, 77];
+    // $numbers = [21, 25, 100, 1, 3, 2, 34, 853, 298, 4, 98, 89, 77];
     echo '<pre>';
     print_r($numbers);
     echo '</pre>';
