@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Таблица проектов</title>
+    <title>Портфолио - Наши проекты</title>
 </head>
 <body>
+<h3>Меню</h3>
+<ul>
+    <li><a href="./private/admin_page.php">Администратор</a></li>
+    <li><a href="http://localhost:8080/index.html">Главная</a></li>
+    <li><a href="http://localhost:8080/second.html">Наши особенности</a></li>
+</ul>
 <h1>Таблица проектов, зарегистрированных на сайте</h1>
 <table>
     <tr>
-        <th>id_project</th>
-        <th>title_project</th>
-        <th>author_name</th>
-        <th>main_lang</th>
-        <th>descrip</th>
+        <th>ID проекта</th>
+        <th>Название</th>
+        <th>Автор</th>
+        <th>Язык</th>
+        <th>Описание</th>
     </tr>
 <?php
 
-$mysqli = new mysqli("mysql-db", "root", "password", "portfolioDB");
+$mysqli = new mysqli("database1", "user", "password", "portfolioDB");
 
 $result = $mysqli->query("SELECT * FROM projects");
 foreach ($result as $row){
@@ -26,9 +32,10 @@ foreach ($result as $row){
     <td>{$row['main_lang']}</td><td>{$row['descrip']}</td></tr>";
 }
 ?>
+
 </table>
 <?php
-phpinfo();
+// phpinfo();
 ?>
 </body>
 </html>

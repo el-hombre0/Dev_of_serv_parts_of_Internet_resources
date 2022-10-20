@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио - Наши особенности</title>
+  </head>
+  <body>
+    <main>
+      <h3>Меню</h3>
+      <ul>
+        <li><a href="http://localhost:80/index.php">Наши проекты</a></li>
+        <li><a href="./index.html">Главная</a></li>
+      </ul>
+      <h1>Наши особенности</h1>
+      <ul>
+        <li>
+          <h3>Простота и удобство</h3>
+          <p>
+            Для успешной работы достаточно простых навыков пользователя. Знаний
+            программиста точно не потребуется!
+          </p>
+        </li>
+        <li>
+          <h3>Цифровая компилка</h3>
+          <p>
+            Текст, фото, видео и многое другое в одном месте. Интеграция с
+            многими порталами или сервисами: google, youtube, prezi, vimeo и
+            другими.
+          </p>
+        </li>
+        <li>
+          <h3>Soft skills</h3>
+          <p>
+            Пройдите диагностику универсальных навыков, узнайте свои сильные
+            стороны.
+          </p>
+        </li>
+        <li>
+          <h3>НАЙДИТЕ РАБОТУ / НАЙДИТЕ РАБОТНИКА</h3>
+          <p>
+            Заполните анкету для поиска работы. / Изучите анкеты, портфолио,
+            выбирайте работников с нужными SoftSkills.
+          </p>
+        </li>
+        <li>
+          <h3>ОНЛАЙН ВЗАИМОДЕЙСТВИЕ</h3>
+          <p>Используйте инструменты портала для общения и обучения.</p>
+        </li>
+      </ul>
+      <h2>Заполните форму обратной связи, и мы с Вами свяжемся.</h2>
+      <form method="post" action="http://localhost:80/second.php">
+        <div class="left">
+          <label for="name">Имя:</label>
+          <input maxlength="30" type="text" name="name" />
+
+          <label for="phone">Телефон:</label>
+          <input maxlength="30" type="text" name="phone" />
+
+          <label for="mail">E-mail:</label>
+          <input maxlength="30" type="text" name="mail" />
+        </div>
+
+        <div class="right">
+          <label for="message">Сообщение:</label>
+          <textarea rows="7" cols="50" name="message"></textarea>
+
+          <input type="submit" value="Отправить" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
