@@ -1,2 +1,2 @@
 <?php
-$connect = new mysqli("database1", "user", "password", "portfolioDB");
+$connect = new mysqli("db", "user", "password", "portfolioDB");

@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61469dc5-1af4-4f95-9f53-de1d510e9dec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/apache.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/private/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/private/admin_page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/apache/second.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/database/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/database/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/html/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/html/second.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice4/WebService/nginx/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice_3/WebService/nginx/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_3/WebService/nginx/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/WebService/apache/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_4/WebService/apache/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/WebService/apache/apache.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/WebService/apache/indexApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_4/WebService/apache/indexApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/WebService/database/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_4/WebService/database/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_4/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +28,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Станислав/University/3_kurs/5_semestr/Server_parts_of_Internet_resources/Dev_of_server_parts_of_Internet_resources/Practice4",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Станислав/University/3_kurs/5_semestr/Server_parts_of_Internet_resources/Dev_of_server_parts_of_Internet_resources/Practice4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice4" />
@@ -61,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668083430984</updated>
       <workItem from="1668083437083" duration="1116000" />
+      <workItem from="1668635424630" duration="26000" />
     </task>
     <servers />
   </component>

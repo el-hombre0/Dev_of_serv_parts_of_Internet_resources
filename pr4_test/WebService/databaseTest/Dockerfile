@@ -1,4 +1,4 @@
-FROM mysql:5.7.40-oracle
+FROM mysql
 # ENV MYSQL_DATABASE: portfolioDB
 # ENV MYSQL_USER: root
 # ENV MYSQL_PASSWORD: password
@@ -7,4 +7,4 @@ FROM mysql:5.7.40-oracle
 
 # ADD ./init.sql /docker-entrypoint-initdb.d/
 
-EXPOSE 3306
+EXPOSE 33060
