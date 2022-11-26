@@ -1,6 +1,5 @@
 <?php
 session_start();
-// print_r($_POST);
 require_once '../connect.php';
 
 $login = $_POST['login'];

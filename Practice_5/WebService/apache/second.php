@@ -6,7 +6,8 @@
 </head>
  
 <body>
- 
+</body>
+</html>
 <?php
    $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
  
@@ -31,5 +32,3 @@
       exit;
    }
 ?>
-</body>
-</html>

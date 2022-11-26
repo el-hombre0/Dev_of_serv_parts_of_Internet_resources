@@ -25,6 +25,7 @@ if($_SESSION['user']){
     
     <label>Изображение профиля</label>
     <input type="file" name="avatar">
+    
     <button type="submit">Зарегистрироваться</button>
     <p>Уже есть аккаунт? <a href="http://localhost:80/index.php">Войдите!</a></p>
     <?php

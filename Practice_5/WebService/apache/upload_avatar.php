@@ -13,7 +13,7 @@ $deny = array(
 );
  
 // Директория куда будут загружаться файлы.
-$path = __DIR__ . '/uploads/';
+$path = __DIR__ . '/uploads/avatar';
  
 if (isset($_FILES[$input_name])) {
 	// Проверим директорию для загрузки.

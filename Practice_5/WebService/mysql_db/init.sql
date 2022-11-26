@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS auth_users (
     password_user_enc varchar(100),
     name_user varchar(100),
     avatar varchar(500),
+    `resume` varchar(500),
     PRIMARY KEY (id_user)
 );
 INSERT INTO auth_users (login_user, password_user, password_user_enc, name_user, avatar) VALUES(
