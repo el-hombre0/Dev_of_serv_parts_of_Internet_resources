@@ -2,14 +2,26 @@
 session_start();
 require_once '../connect.php';
 $login = $_POST['login'];
-// $password = md5($_POST['password']);
+// echo '$_POST[\'password\'] = '.$_POST['password'].'<br/>';
 $password = $_POST['password'];
 
-echo $password;
-// $check_user = mysqli_query($connect, "SELECT * FROM auth_users WHERE login_user = '$login' AND password_user = '$password'");
+$password = md5($_POST['password']);
+// echo 'md5($_POST[\'password\']) = '.$password;
 $check_user = mysqli_query($connect, "select * from auth_users where login_user = '$login' and password_user = '$password'");
-if(mysqli_num_rows($check_user) > 0){
+// echo "Rows num is: ".mysqli_num_rows($check_user);
 
+if(mysqli_num_rows($check_user) > 0){
+    $user = mysqli_fetch_assoc($check_user);
+    // print_r($check_user);
+    // print_r($user);
+    // print_r($_SESSION);
+    $_SESSION['user'] = [
+        "id_user" => $user['id_user'],
+        "login_user" => $user['login_user'],
+        "name_user" => $user['name_user'],
+        "avatar" => $user['avatar']
+    ];
+    header('Location: ../profile.php');
 }
 else{
     $_SESSION['message'] = 'Неверный логин или пароль';

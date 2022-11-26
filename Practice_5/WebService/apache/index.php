@@ -1,7 +1,8 @@
 <?php
     session_start();
-    $count = isset($_SESSION['count']) ? $_SESSION['count'] : 1;
-    echo $count; $_SESSION['count'] = ++$count; 
+    
+    // $count = isset($_SESSION['count']) ? $_SESSION['count'] : 1;
+    // echo $count; $_SESSION['count'] = ++$count; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,24 +19,30 @@
     <li><a href="http://localhost:8080/index.html">Главная</a></li>
     <li><a href="http://localhost:8080/second.html">Наши особенности</a></li>
 </ul>
-<h3>
-  Авторизация  
-</h3>
-<form action="vendor/signin.php" method="POST" >
-    <label>Логин</label>
-    <input type="text" placeholder="Введите логин">
-    <label>Пароль</label>
-    <input type="password" placeholder="Введите пароль">
-    <button type="submit">Войти</button>
-    <p>Впервые тут? <a href="http://localhost:80/register.php">Зарегистрируйтесь!</a></p>
-    <?php
+<?php
+if($_SESSION['user']){
+    echo "<h2>Здравствуйте, ".$_SESSION['user']['name_user']."!</h2>
+    <a href=\"profile.php\">Личный аккаунт</a>
+    <a href=\"vendor/logout.php\">Выход</a>";
+} 
+else{
+    echo "<h3>Авторизация</h3>
+        <form action=\"vendor/signin.php\" method=\"POST\" >
+        <label>Логин</label>
+        <input type=\"text\" name=\"login\" placeholder=\"Введите логин\">
+        <label>Пароль</label>
+        <input type=\"password\" name=\"password\" placeholder=\"Введите пароль\">
+        <button type=\"submit\">Войти</button>
+        <p>Впервые тут? <a href=\"http://localhost:80/register.php\">Зарегистрируйтесь!</a></p>";
     if($_SESSION['message']){
-            echo '<p class="msg"> '. $_SESSION['message'].' </p>';
-        }
-        
-        unset($_SESSION['message']); //уничтожение
-    ?>
-</form>
+        echo '<p class="msg"> '. $_SESSION['message'].' </p>';
+    }
+          
+    unset($_SESSION['message']); //уничтожение
+    echo "</form>";
+}
+?>
+
 <button>Смена темы сайта</button>
 <h1>Таблица проектов, зарегистрированных на сайте</h1>
 <table>

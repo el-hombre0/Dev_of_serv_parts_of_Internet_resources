@@ -12,8 +12,6 @@
     <form action="/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="file_res">
         <input type="submit" value="Отправить">
-        <?php
-        echo phpinfo();
-        ?>
+    </form>
 </body>
 </html>
