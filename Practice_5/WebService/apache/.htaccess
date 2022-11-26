@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ indexApi.php?q=$1 [L,QSA]
+
+php_value session.save_handler "redis"
+php_value session.save_path "tcp://127.0.0.1:6379"
