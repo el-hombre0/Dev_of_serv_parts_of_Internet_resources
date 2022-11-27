@@ -96,7 +96,6 @@ if (isset($_FILES[$input_name])) {
 				}
 				$name = $parts['filename'] . $prefix . '.' . $parts['extension'];
 				// Перемещаем файл в директорию.
-				// if (move_uploaded_file($file['tmp_name'], $path .'/'. $name)) {
 					if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$dbpath = $path.$name;
@@ -107,13 +106,8 @@ if (isset($_FILES[$input_name])) {
 				}
 			}
 		}
-		
-		// Выводим сообщение о результате загрузки.
-		if (!empty($success)) {
-			echo '<p>' . $success . '</p>';	
-		} else {
-			echo '<p>' . $error . '</p>';
-		}
+		$_SESSION['user']['resume'] = $path . $name;
+		header('Location: ./profile.php');
 	}
 }
 ?>

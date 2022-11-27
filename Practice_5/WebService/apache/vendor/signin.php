@@ -14,7 +14,7 @@ if(mysqli_num_rows($check_user) > 0){
         "login_user" => $user['login_user'],
         "name_user" => $user['name_user'],
         "avatar" => $user['avatar'],
-        "resume" => $user['`resume`']
+        "resume" => $user['resume']
     ];
     header('Location: ../profile.php');
 }
