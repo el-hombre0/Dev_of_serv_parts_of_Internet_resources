@@ -1,7 +1,7 @@
 FROM php:7.4.3-apache
 WORKDIR /var/www/html/
 COPY . .
-
+COPY php.ini /usr/local/etc/php/php.ini
 # RUN apt-get update &&\
 #     apt-get install -y libaprutil1-dbd-mysql &&\
 #     a2enmod authn_dbd &&\
@@ -18,4 +18,6 @@ RUN apt-get update &&\
     a2enmod authn_socache &&\
     docker-php-ext-install mysqli &&\
     a2enmod rewrite &&\
+    pecl install redis &&\
+    docker-php-ext-enable redis &&\
     service apache2 restart

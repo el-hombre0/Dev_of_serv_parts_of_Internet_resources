@@ -12,8 +12,6 @@
         }
     }
     echo "Start: ".$_SESSION['start']." End: ".$_SESSION['expire'];
-    // $count = isset($_SESSION['count']) ? $_SESSION['count'] : 1;
-    // echo $count; $_SESSION['count'] = ++$count; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,35 +19,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Наши проекты</title>
+    <title>Portfolio - Our projects</title>
 </head>
 <body>
-<h3>Меню</h3>
+<h3>Menu</h3>
 <ul>
-    <li><a href="./private/admin_page.php">Администратор</a></li>
-    <li><a href="http://localhost:8080/index.html">Главная</a></li>
-    <li><a href="http://localhost:8080/second.html">Наши особенности</a></li>
+    <li><a href="http://localhost:8080/index.html">Main page</a></li>
+    <li><a href="http://localhost:8080/second.html">Our features</a></li>
 </ul>
 <?php
 if($_SESSION['user']){
-    echo "<h2>Здравствуйте, ".$_SESSION['user']['login_user']."!</h2>
-    <a href=\"profile.php\">Личный аккаунт</a>
-    <a href=\"vendor/logout.php\">Выход</a>";
+    echo "<h2>Hello, ".$_SESSION['user']['login_user']."!</h2>
+    <a href=\"profile.php\">Personal account</a>
+    <a href=\"vendor/logout.php\">Exit</a>";
 } 
 else{
-    echo "<h3>Авторизация</h3>
+    echo "<h3>Autorization</h3>
         <form action=\"vendor/signin.php\" method=\"POST\" >
         <label>Логин</label>
-        <input type=\"text\" name=\"login\" placeholder=\"Введите логин\">
+        <input type=\"text\" name=\"login\" placeholder=\"Enter login\">
         <label>Пароль</label>
-        <input type=\"password\" name=\"password\" placeholder=\"Введите пароль\">
-        <button type=\"submit\">Войти</button>
-        <p>Впервые тут? <a href=\"http://localhost:80/register.php\">Зарегистрируйтесь!</a></p>";
+        <input type=\"password\" name=\"password\" placeholder=\"Enter password\">
+        <button type=\"submit\">Log in</button>
+        <p>Впервые тут? <a href=\"http://localhost:80/register.php\">Register!</a></p>";
     if($_SESSION['message']){
         echo '<p class="msg"> '. $_SESSION['message'].' </p>';
     }
           
-    unset($_SESSION['message']); //уничтожение
+    unset($_SESSION['message']); 
     echo "</form>";
 }
 ?>

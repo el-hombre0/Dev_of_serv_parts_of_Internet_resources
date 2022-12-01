@@ -38,10 +38,17 @@ services:
       - ./WebService/mysql_db/:/docker-entrypoint-initdb.d
 
   db_redis:
-    image: redis:7.0.5
+    image: redis:6.2.7
     container_name: db_redis
-    volumes:
-      - ./WebService/redis_db/:/data
+    command: redis-server
+    restart: on-failure
     ports:
       - 6379:6379
+# redis:
+#     container_name: redis
+#     image: redis:6.2.7
+#     command: redis-server
+#     restart: on-failure
+#     ports:
+#       - "6379:6379"
 
