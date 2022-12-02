@@ -26,12 +26,12 @@ if(!$_SESSION['user']){
         <button> 
         <a href="./vendor/downloadFile.php">Download your resume</a>
         </button>
-        <a href="vendor/logout.php">Exit</a>
+        <a href="./vendor/logout.php">Exit</a>
     </form>
 
     <h4>Upload your resume:</h4>
        
-    <form action="/upload_resume.php" method="post" enctype="multipart/form-data">
+    <form action="./upload_resume.php" method="post" enctype="multipart/form-data">
         <input type="file" name="file">
         <input type="submit" value="Send">
         <?php

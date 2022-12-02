@@ -16,7 +16,7 @@ $deny = array(
 );
  
 // Директория куда будут загружаться файлы.
-$path = __DIR__ . '/uploads/resumes/';
+$path = __DIR__ . '../uploads/resumes/';
 if (isset($_FILES[$input_name])) {
 	// Проверим директорию для загрузки.
 	if (!is_dir($path)) {
@@ -42,20 +42,20 @@ if (isset($_FILES[$input_name])) {
 		if (!empty($file['error']) || empty($file['tmp_name'])) {
 			switch (@$file['error']) {
 				case 1:
-				case 2: $error = 'Превышен размер загружаемого файла.'; break;
-				case 3: $error = 'Файл был получен только частично.'; break;
-				case 4: $error = 'Файл не был загружен.'; break;
-				case 6: $error = 'Файл не загружен - отсутствует временная директория.'; break;
-				case 7: $error = 'Не удалось записать файл на диск.'; break;
-				case 8: $error = 'PHP-расширение остановило загрузку файла.'; break;
-				case 9: $error = 'Файл не был загружен - директория не существует.'; break;
-				case 10: $error = 'Превышен максимально допустимый размер файла.'; break;
-				case 11: $error = 'Данный тип файла запрещен.'; break;
-				case 12: $error = 'Ошибка при копировании файла.'; break;
-				default: $error = 'Файл не был загружен - неизвестная ошибка.'; break;
+				case 2: $error = 'The size of the uploaded file has been exceeded.'; break;
+				case 3: $error = 'The file was gotten partly'; break;
+				case 4: $error = 'The file wasn\'t uploaded.'; break;
+				case 6: $error = 'The file is not uploaded - the temporary directory is absent.'; break;
+				case 7: $error = 'Failed to write to disk.'; break;
+				case 8: $error = 'PHP extension stopped the file\'s uploading.'; break;
+				case 9: $error = 'The file wasn\t uploaded - the directory is not exists.'; break;
+				case 10: $error = 'The max acceptable file size is exceeded.'; break;
+				case 11: $error = 'This file type is forbidden.'; break;
+				case 12: $error = 'Error while copieng file.'; break;
+				default: $error = 'The file wasn\t uplpaded - unknown error.'; break;
 			}
 		} elseif ($file['tmp_name'] == 'none' || !is_uploaded_file($file['tmp_name'])) {
-			$error = 'Не удалось загрузить файл.';
+			$error = 'Failed to upload the file.';
 		} else {
 			// Оставляем в имени файла только буквы, цифры и некоторые символы.
 			$pattern = "[^a-zа-яё0-9,~!@#%^-_\$\?\(\)\{\}\[\]\.]";
@@ -82,11 +82,11 @@ if (isset($_FILES[$input_name])) {
 			$name = strtr($name, $converter);
 			$parts = pathinfo($name);
 			if (empty($name) || empty($parts['extension'])) {
-				$error = 'Недопустимое тип файла';
+				$error = 'Invalid file type.';
 			} elseif (!empty($allow) && !in_array(strtolower($parts['extension']), $allow)) {
-				$error = 'Недопустимый тип файла';
+				$error = 'Invalid file type.';
 			} elseif (!empty($deny) && in_array(strtolower($parts['extension']), $deny)) {
-				$error = 'Недопустимый тип файла';
+				$error = 'Invalid file type.';
 			} else {
 				// Чтобы не затереть файл с таким же названием, добавим префикс.
 				$i = 0;
@@ -100,9 +100,9 @@ if (isset($_FILES[$input_name])) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$dbpath = $path.$name;
 					mysqli_query($connect, "UPDATE auth_users SET `resume`='$dbpath' WHERE login_user='$login'");
-					$success = 'Файл «' . $name . '» успешно загружен.<br/>Тип файла '.$_FILES[$input_name]['type'].'<br/>Размер файла '.$_FILES[$input_name]['size'].'B' ;
+					$success = 'The file «' . $name . '» has been successfully uploaded.<br/>File type is '.$_FILES[$input_name]['type'].'<br/>File size is '.$_FILES[$input_name]['size'].'B' ;
 				} else {
-					$error = 'Не удалось загрузить файл.';
+					$error = 'Failed to upload the file.';
 				}
 			}
 		}

@@ -30,7 +30,6 @@ function addProject($connect, $data){
     $author = $data['author'];
     $lang = $data['lang'];
     $descrip = $data['descrip'];
-    // $projects = $connect->query("insert into projects (title_project, author_name, main_lang, descrip) values ('$title', '$author', '$lang', '$descrip')");
     mysqli_query($connect, "insert into projects (title_project, author_name, main_lang, descrip) values ('$title', '$author', '$lang', '$descrip')");
     http_response_code(201);
 
@@ -38,7 +37,6 @@ function addProject($connect, $data){
         "status" => true,
         "post_id" => mysqli_insert_id($connect)
     ];
-    // mysqli_query($connect, );
     echo json_encode($res);
 }
 
@@ -118,7 +116,6 @@ function updatePro($connect, $id, $data){
     $skills = $data['skills'];
     $work_expirience = $data['work_expirience'];
     $education = $data['education'];
-    // mysqli_query($connect, "update projects set title_project = '$title', author_name = '$author', main_lang = '$lang', descrip = '$descrip' where projects.id_project = '$id'");
 
     mysqli_query($connect, "update pros set `name` = '$name', birth_date = '$birth_date', residence_place = '$residence_place', contacts = '$contacts', skills = '$skills', work_expirience = '$work_expirience', education = '$education' where pros.id_pro = '$id'");
     http_response_code(200);

@@ -1,9 +1,6 @@
 <?php
-// die($_GET['q']);
-// die(print_r($_POST));
-
 header('Content-type: json/application');
-require 'connect.php';
+require '../controllers/connect.php';
 require 'functions.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
@@ -46,7 +43,6 @@ elseif($method === 'PATCH'){
         if(isset($id)){
             $data = file_get_contents('php://input');
             $data = json_decode($data, true);
-            // die($data->title);
             updateProject($connect, $id, $data);
         }
     }

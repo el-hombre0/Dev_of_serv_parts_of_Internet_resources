@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS auth_users (
 );
 INSERT INTO auth_users (login_user, password_user, password_user_enc, name_user, avatar) VALUES(
     'admin',
-    '$2y$10$zg8.a61TAaVe.IbijfV/9OcCK2mqWruVU9ZPDCt3LaV0kyfjIgj4K',
+    '21232f297a57a5a743894a0e4a801fc3',
     'admin',
     'Efimtsev S.M.',
     null
@@ -79,4 +79,9 @@ INSERT INTO auth_users (login_user, password_user, password_user_enc, name_user,
     'sammypas',
     'Jonnes S.',
     null
+),
+(
+    'stas@yandex.ru',
+    'stas',
+
 );
