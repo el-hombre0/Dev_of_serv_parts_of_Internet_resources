@@ -16,9 +16,9 @@ if(!$_SESSION['user']){
 <body>
     <h3>Меню</h3>
     <ul>
-        <li><a href="http://localhost:8080/index.html">Главная</a></li>
+        <li><a href="http://localhost:8080/index.html">О нас</a></li>
         <li><a href="http://localhost:8080/second.html">Наши особенности</a></li>
-        <li><a href="http://localhost:80/index.php">Наши проекты</a></li>
+        <li><a href="http://localhost:80/ru/index.php">Наши проекты</a></li>
     </ul>
     <form>
         <img src="<?= "../".$_SESSION['user']['avatar']; ?>" width="100" alt="Фото профиля">
@@ -28,9 +28,6 @@ if(!$_SESSION['user']){
         <button> 
         <a href="./vendor/downloadFile.php">Скачать Ваше резюме</a>
         </button>
-        <?php 
-        echo 'resume: '.$_SESSION['resume']; 
-        ?>
         <a href="./vendor/logout.php">Выход</a>
     </form>
 
