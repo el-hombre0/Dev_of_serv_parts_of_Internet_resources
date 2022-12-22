@@ -1,0 +1,46 @@
+version: '3.9'
+services:
+  apache:
+    build:
+      context: ./WebService/apache
+      dockerfile: Dockerfile
+    volumes:
+      - './WebService/apache:/var/www/html/'
+      # - ./WebService/apache/apache2.conf:/etc/apache2/apache2.conf
+
+    ports:
+      - 80:80
+    depends_on:
+      - db_mysql
+      - nginx
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ./WebService/nginx
+      dockerfile: Dockerfile
+    volumes:
+      - ./WebService/nginx/html:/usr/share/nginx/html
+      - ./WebService/nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8080:80
+    depends_on:
+      - db_mysql
+      
+  db_mysql:
+    build: 
+      context: ./WebService/mysql_db
+      dockerfile: Dockerfile
+    container_name: db_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./WebService/mysql_db/:/docker-entrypoint-initdb.d
+
+  db_redis:
+    image: redis:7.0.5
+    container_name: db_redis
+    command: redis-server
+    restart: on-failure
+    ports:
+      - 6379:6379

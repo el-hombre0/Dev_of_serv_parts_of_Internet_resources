@@ -1,0 +1,13 @@
+login stas
+password stas
+
+mysql -uroot -ppassword
+
+php_value session.save_handler "redis"
+php_value session.save_path "tcp://127.0.0.1:6379"
+
+
+For Practice 6
+apt install zip unzip php-zip
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+composer require --dev phpunit/phpunit ^9
