@@ -89,13 +89,8 @@ if (isset($_FILES[$input_name])) {
 				$error = 'Недопустимый тип файла';
 			} else {
 				// Чтобы не затереть файл с таким же названием, добавим префикс.
-				$i = 0;
-				$prefix = '';
-				while (is_file($path . $parts['filename'] . $prefix . '.' . $parts['extension'])) {
-		  			$prefix = '(' . ++$i . ')';
-				}
-				$name = $parts['filename'] . $prefix . '.' . $parts['extension'];
-				// Перемещаем файл в директорию.
+                $name = getName($path, $parts);
+                // Перемещаем файл в директорию.
 					if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$dbpath = $path.$name;

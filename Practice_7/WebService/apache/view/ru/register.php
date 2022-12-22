@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['user']){
+if ($_SESSION['user']) {
     header('Location: profile.php');
 }
 ?>
@@ -16,18 +16,18 @@ if($_SESSION['user']){
 </head>
 <body>
 <h3>
-Регистрация  
+    Регистрация
 </h3>
 <form action="vendor/signup.php" method="POST" enctype="multipart/form-data">
     <label>Придумайте логин</label>
     <input type="text" name="login" placeholder="Введите логин">
-    
+
     <label>Придумайте пароль</label>
     <input type="password" name="password" placeholder="Введите пароль">
-    
+
     <label>Изображение профиля</label>
     <input type="file" name="avatar">
-    
+
     <button type="submit">Зарегистрироваться</button>
     <p>Уже есть аккаунт? <a href="http://localhost:80/index.php">Войдите!</a></p>
 </form>

@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61469dc5-1af4-4f95-9f53-de1d510e9dec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/uploads/resumes/IMG_1327.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/uploads/resumes/Skan_20220817-(2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/uploads/resumes/scan1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/.idea/Practice_7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/api/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/api/indexApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_theme.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/css/dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/css/light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/second.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/upload_resume.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/downloadFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/signin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/private/admin_page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/second.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/upload_resume.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/downloadFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/signin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/uploads/avatars/1669497454IMG_20160708_151756.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/uploads/resumes/DSPIR_Practice3.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/mysql_db/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/mysql_db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/html/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/html/second.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/nginx/style/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_7/info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="61469dc5-1af4-4f95-9f53-de1d510e9dec" name="Changes" comment="Practice 7 before refactoring, latest">
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/model/Professional.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/model/Project.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/second.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/upload_resume.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/vendor/downloadFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/private/admin_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/second.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/upload_resume.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/vendor/downloadFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_3/WebService/apache/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_3/WebService/apache/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_4/WebService/apache/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_4/WebService/apache/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_5/WebService/apache/en/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/en/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_5/WebService/apache/en/upload_resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/en/upload_resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_5/WebService/apache/ru/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/ru/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_5/WebService/apache/ru/upload_resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_5/WebService/apache/ru/upload_resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_6/WebService/apache/en/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_6/WebService/apache/en/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_6/WebService/apache/en/upload_resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_6/WebService/apache/en/upload_resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_6/WebService/apache/ru/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_6/WebService/apache/ru/second.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_6/WebService/apache/ru/upload_resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_6/WebService/apache/ru/upload_resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_6/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_6/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/api/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/api/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/api/indexApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/api/indexApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/change_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/controllers/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/css/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/second.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/upload_resume.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/downloadFile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/vendor/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/vendor/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/en/vendor/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/en/vendor/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/private/admin_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/second.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/upload_resume.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/downloadFile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/vendor/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/vendor/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_7/WebService/apache/ru/vendor/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_7/WebService/apache/view/ru/vendor/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/Practice_6/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -78,14 +78,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Станислав/University/3_kurs/5_semestr/Server_parts_of_Internet_resources/Dev_of_server_parts_of_Internet_resources",
+    "last_opened_file_path": "C:/Users/Станислав/University/3_kurs/5_semestr/Server_parts_of_Internet_resources/Dev_of_server_parts_of_Internet_resources/Practice_7/WebService/apache/view/ru",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice_7\WebService\apache\view\ru" />
       <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice_7\WebService\apache\view" />
+      <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice_7\WebService\apache\view\en" />
+      <recent name="C:\Users\Станислав\University\3_kurs\5_semestr\Server_parts_of_Internet_resources\Dev_of_server_parts_of_Internet_resources\Practice_7\WebService\apache\view\ru" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,8 +104,17 @@
       <updated>1668083430984</updated>
       <workItem from="1668083437083" duration="1116000" />
       <workItem from="1668635424630" duration="26000" />
-      <workItem from="1671699699101" duration="341000" />
+      <workItem from="1671699699101" duration="6922000" />
+      <workItem from="1671708612065" duration="2494000" />
     </task>
+    <task id="LOCAL-00001" summary="Practice 7 before refactoring, latest">
+      <created>1671700247408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671700247408</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Practice 7 before refactoring, latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practice 7 before refactoring, latest" />
   </component>
 </project>
